@@ -1,0 +1,31 @@
+<br><br>
+<section>
+<img class="banner" src = "/img/banner7.jpg">
+<br><br>
+
+   {{#each products}}
+   
+        <div class="row">
+            <div class="column">
+                <p id="prcategory">{{this.category}}</p>
+                <img id="primg" src="{{this.image}}" style="width:275px;height:275px">
+                <p id="prfooter">Show more</p>
+            </div>
+        </div> 
+
+   {{/each}}
+
+    <p id="bestseller">Best Sellers</p>
+    {{#each products2}}
+    <div class="best">
+        <div class="row2">
+            <div class="column2">
+                <img id="bestimg" src="{{this.image}}" style="width:200px;height:200px">
+            </div>
+        </div> 
+    </div>  
+    <p id="bestfooter">See more</p>
+    {{/each}}
+</section>
+
+
